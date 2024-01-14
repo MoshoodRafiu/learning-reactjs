@@ -2,6 +2,7 @@ import { useState } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
+import { FaCalendar } from "react-icons/fa";
 import './App.css';
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
 
 	return (
 		<div>
+      <div>
+        <FaCalendar color="red" size={40} />
+      </div>
       <Button onClick={() => setAlertStatus(true)}>
         Click me
       </Button>
